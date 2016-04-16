@@ -38,7 +38,7 @@ class API::V1::SubjectsController < ApplicationController
   end
 
   def subject_params
-    params.require(:subject).permit(:subject_name, :subject_description, :exam_1, :exam_2, :exam_3, :exam_average)
+    params.require(:subject).permit(:subject_name, :subject_description, :exam_1, :exam_2, :exam_3, :exam_average, :teacher_name)
   end
 
   def set_subject
